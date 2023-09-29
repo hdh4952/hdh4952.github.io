@@ -4,14 +4,16 @@
   "private": true,
   "homepage": "http://hdh4952.github.io",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8282",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
+    "contentlayer": "^0.3.4",
     "next": "latest",
+    "next-contentlayer": "^0.3.4",
     "react": "latest",
     "react-dom": "latest"
   },
