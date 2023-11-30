@@ -1,15 +1,21 @@
-import {allPosts} from '.contentlayer/generated'
+import { allPosts } from ".contentlayer/generated";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  const posts = allPosts;
-
-  return posts.map((post) => ({
-    id: post._raw.flattenedPath
-  }));
+  return allPosts.map((post) => ({ id: post._raw.flattenedPath }));
 }
 
-const PostDetailPage = ({params} : {params: {id: string}}) => {
-  return (<div>POST {params.id}</div>)
-}
+export default function Post({ params }: { params: { id: string } }) {
+  const post = allPosts.find((post) => post._raw.flattenedPath === params.id);
 
-export default PostDetailPage;
+  if (!post) notFound();
+
+  const MDXComponent = useMDXComponent(post.body.code);
+
+  return (
+    <>
+      <MDXComponent />
+    </>
+  );
+}

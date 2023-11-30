@@ -1,0 +1,28 @@
+{
+  "cacheItemsMap": {
+    "hello.mdx": {
+      "document": {
+        "title": "안녕하세요. 제목이에요.",
+        "description": "안녕하세요. 미리보기 내용입니다.",
+        "category": "카테고리1",
+        "createdAt": "2023-09-25T15:00:00.000Z",
+        "body": {
+          "raw": "\r\n안녕하세요. 오늘은 Next.js 프로젝트를 만들어볼게요.",
+          "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var j=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var _=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),l=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},a=(t,e,n,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!f.call(t,o)&&o!==n&&r(t,o,{get:()=>e[o],enumerable:!(s=u(e,o))||s.enumerable});return t};var g=(t,e,n)=>(n=t!=null?p(j(t)):{},a(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),D=t=>a(r({},\"__esModule\",{value:!0}),t);var x=_((C,i)=>{i.exports=_jsx_runtime});var w={};l(w,{default:()=>h,frontmatter:()=>M});var c=g(x()),M={title:\"\\uC548\\uB155\\uD558\\uC138\\uC694. \\uC81C\\uBAA9\\uC774\\uC5D0\\uC694.\",description:\"\\uC548\\uB155\\uD558\\uC138\\uC694. \\uBBF8\\uB9AC\\uBCF4\\uAE30 \\uB0B4\\uC6A9\\uC785\\uB2C8\\uB2E4.\",category:\"\\uCE74\\uD14C\\uACE0\\uB9AC1\",createdAt:new Date(16956864e5)};function m(t){let e=Object.assign({p:\"p\"},t.components);return(0,c.jsx)(e.p,{children:\"\\uC548\\uB155\\uD558\\uC138\\uC694. \\uC624\\uB298\\uC740 Next.js \\uD504\\uB85C\\uC81D\\uD2B8\\uB97C \\uB9CC\\uB4E4\\uC5B4\\uBCFC\\uAC8C\\uC694.\"})}function b(t={}){let{wrapper:e}=t.components||{};return e?(0,c.jsx)(e,Object.assign({},t,{children:(0,c.jsx)(m,t)})):m(t)}var h=b;return D(w);})();\n;return Component;"
+        },
+        "_id": "hello.mdx",
+        "_raw": {
+          "sourceFilePath": "hello.mdx",
+          "sourceFileName": "hello.mdx",
+          "sourceFileDir": ".",
+          "contentType": "mdx",
+          "flattenedPath": "hello"
+        },
+        "type": "Post"
+      },
+      "documentHash": "1701351702700",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}
