@@ -35,10 +35,10 @@ const NavBar = () => {
             height={120}
           />
         </div>
-        <p>
+        <div>
           <div className="font-bold text-3xl">Daehee</div>
           <div className="italic">그냥 하면 돼</div>
-        </p>
+        </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         {navItems.map((item) => (
