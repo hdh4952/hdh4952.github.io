@@ -6,5 +6,5 @@ import react from '@astrojs/react'
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx(), react()],
-  site: 'https://astro-minimal.netlify.app/',
+  site: 'https://hdh4952.github.io',
 })
