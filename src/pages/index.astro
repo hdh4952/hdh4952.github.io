@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro'
+import PostPreview from '../components/PostPreview.astro'
+import config from '../config'
+
+const allPosts = await Astro.glob('./posts/*')
+allPosts.sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf(),
+)
+---
+
+<Base meta={{ title: config.title }}>
+  {
+    allPosts.map((post) => (
+      <PostPreview
+        url={post.url}
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        pubDate={post.frontmatter.pubDate}
+      />
+    ))
+  }
+</Base>
